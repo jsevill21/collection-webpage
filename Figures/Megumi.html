@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Megumi</title>
+    <style>
+      body {
+        color: white;
+        font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+        font-size: 20px;
+        background-color: black;
+      }
+      img {
+        border: 5px solid white;
+        height: 900px;
+        width: auto;
+      }
+      .thumbnail {
+        cursor: pointer;
+        height: 200px;
+        width: auto;
+        opacity: 0.5;
+        margin-right: 10px;
+        margin-left: 10px;
+      }
+      .thumbnail:hover {
+        opacity: 1;
+      }
+      .active {
+        opacity: 1;
+      }
+      #slide-wrapper {
+        margin-left: 100px;
+        display: flex;
+        max-width: 300px;
+        min-height: 100px;
+        align-items: center;
+      }
+      #slider {
+        width: 180px;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: hidden;
+      }
+      .arrow {
+        width: 30px;
+        height: auto;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      #content-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .column {
+        width: 650px;
+        padding: 10px;
+      }
+      .info {
+        display: table; /* keep the background color wrapped tight */
+        margin-left: 100px; /* keep the table centered */
+        padding: 5px;
+        background-color: white;
+        color: black;
+      }
+      .desc {
+        margin-left: 100px;
+        color: white;
+      }
+      h1 {
+        margin-top: -240px;
+        display: table; /* keep the background color wrapped tight */
+        margin-left: 100px; /* keep the table centered */
+        padding: 5px;
+        background-color: white;
+        color: black;
+        font-size: 40px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="content-wrapper">
+      <div class="column">
+        <img
+          id="featured"
+          src="https://static.myfigurecollection.net/upload/items/large/1359328.jpg"
+          alt="Megumi"
+        />
+      </div>
+
+      <div class="column">
+        <h1>Fushiguro Megumi Figuarts Mini</h1>
+        <p class="info">Manufacturer: Bandai Spirits</p>
+        <p class="info">Retail Price: 2700 Yen</p>
+        <p class="info">Release Date: 2022</p>
+
+        <p class="desc">
+          A gift from my parents from a trip. Very small (especially when
+          displayed next to my Gojo figure) cute and I like the addition of his
+          dog.
+        </p>
+        <div id="slide-wrapper">
+          <img id="slideLeft" class="arrow" src="arrow.png" alt="" />
+
+          <div id="slider">
+            <img
+              class="thumbnail"
+              src="https://static.myfigurecollection.net/upload/items/large/1359328.jpg"
+              alt=""
+            />
+            <img
+              class="thumbnail"
+              src="https://static.myfigurecollection.net/upload/pictures/2021/11/01/2901125.jpeg"
+              alt=""
+            />
+            <img
+              class="thumbnail active"
+              src="https://static.myfigurecollection.net/upload/pictures/2021/11/01/2901126.jpeg"
+              alt=""
+            />
+          </div>
+
+          <img id="slideRight" class="arrow" src="arrow_right.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <script src="Slider.js"></script>
+  </body>
+</html>

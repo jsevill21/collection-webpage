@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Figure Collection</title>
+    <style>
+      body {
+        text-align: center;
+        font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+        color: white;
+        padding: 10px;
+        background-color: black;
+      }
+      .btnDiv {
+        display: inline;
+        float: left;
+      }
+      button {
+        background-color: white;
+        color: black;
+        float: right;
+        font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+        font-size: 20px;
+        cursor: pointer;
+      }
+      button:hover {
+        opacity: 0.5;
+      }
+      .active {
+        opacity: 0.5;
+      }
+      h1 {
+        font-size: 60px;
+      }
+      h2 {
+        font-size: 40px;
+        margin-top: 100px;
+      }
+      img {
+        border: 5px solid;
+        border-color: white;
+        height: 150px;
+        width: auto;
+        cursor: pointer;
+      }
+      img:hover {
+        opacity: 0.7;
+      }
+      .filterDiv {
+        margin: 5px;
+        width: 155px;
+        height: 155px;
+        display: none;
+      }
+      .show {
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="btnDiv">
+      <button id="posable" onclick="filterSelection('posable')">Posable</button>
+      <button id="prepainted" onclick="filterSelection('prepainted')">
+        Prepainted
+      </button>
+      <button id="all" class="active" onclick="filterSelection('all')">
+        Show all
+      </button>
+    </div>
+
+    <h1>Figure Collection</h1>
+
+    <h2>Owned</h2>
+
+    <div class="filterDiv prepainted">
+      <a href="Figures/Lio.html" title="Lio Fotia 1/7 Scale">
+        <img src="images/Lio.png" alt=""
+      /></a>
+    </div>
+    <div class="filterDiv prepainted">
+      <a href="Figures/Gojo.html" title="Satoru Gojo 1/7 Scale"
+        ><img src="images/Gojo.png" alt=""
+      /></a>
+    </div>
+    <div class="filterDiv prepainted">
+      <a href="Figures/Rengoku.html" title="Rengoku Kyoujurou 1/8 Scale"
+        ><img src="images/Rengoku.png" alt=""
+      /></a>
+    </div>
+    <div class="filterDiv prepainted">
+      <a href="Figures/Kuroko.html" title="Kuroko Tetsuya 1/8 Scale"
+        ><img src="images/Kuroko.png" alt=""
+      /></a>
+    </div>
+    <div class="filterDiv prepainted">
+      <a href="Figures/Haruka.html" title="Haruka Nanase 1/8 Scale"
+        ><img src="images/Haruka.png" alt=""
+      /></a>
+    </div>
+    <div class="filterDiv prepainted">
+      <a href="Figures/Itadori.html" title="Itadori Yuuji Pop Up Parade"
+        ><img src="images/Itadori.png" alt=""
+      /></a>
+    </div>
+    <div class="filterDiv prepainted">
+      <a href="Figures/Tanjiro.html" title="Kamado Tanjiro Figuarts ZERO"
+        ><img src="images/Tanjiro.png" alt=""
+      /></a>
+    </div>
+    <div class="filterDiv prepainted">
+      <a href="Figures/Inosuke.html" title="Hashibara Inosuke Figuarts ZERO"
+        ><img src="images/Inosuke.png" alt=""
+      /></a>
+    </div>
+    <div class="filterDiv prepainted">
+      <a href="Figures/Zenitsu.html" title="Agatsuma Zenitsu Figuarts ZERO"
+        ><img src="images/Zenitsu.png" alt=""
+      /></a>
+    </div>
+    <div class="filterDiv posable">
+      <a href="Figures/Danboard.html" title="Revoltech Danboard Mini"
+        ><img src="images/Danboard.png" alt=""
+      /></a>
+    </div>
+    <div class="filterDiv prepainted">
+      <a href="Figures/Megumi.html" title="Fushiguro Megumi Figuarts Mini"
+        ><img src="images/Megumi.png" alt=""
+      /></a>
+    </div>
+    <div class="filterDiv posable">
+      <a href="Figures/Naruto.html" title="Uzumaki Naruto S.H. Figuarts"
+        ><img src="images/Naruto.png" alt=""
+      /></a>
+    </div>
+    <div class="filterDiv posable">
+      <a href="Figures/Victor.html" title="Victor Nikiforov Nendoroid"
+        ><img src="images/Victor.png" alt=""
+      /></a>
+    </div>
+    <div class="filterDiv posable">
+      <a href="Figures/Yuuri.html" title="Katsuki Yuuri Nendoroid"
+        ><img src="images/Yuuri.png" alt=""
+      /></a>
+    </div>
+
+    <h2>On Preorder</h2>
+    <div class="filterDiv prepainted">
+      <a href="Figures/Aether.html" title="Traveler (Aether) 1/7 Scale"
+        ><img src="images/Aether.png" alt=""
+      /></a>
+    </div>
+    <div class="filterDiv prepainted">
+      <a href="Figures/Giyuu.html" title="Tomioka Giyuu 1/8 Scale"
+        ><img src="images/Giyuu.png" alt=""
+      /></a>
+    </div>
+    <div class="filterDiv prepainted">
+      <a href="Figures/Bondrewd.html" title="Bondrewd Non-Scale Figure"
+        ><img src="images/Bondrewd.png" alt=""
+      /></a>
+    </div>
+
+    <script src="Filter.js"></script>
+  </body>
+</html>

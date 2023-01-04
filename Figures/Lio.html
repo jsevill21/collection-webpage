@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lio</title>
+    <style>
+      body {
+        color: white;
+        font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+        font-size: 20px;
+        background-color: black;
+      }
+      img {
+        border: 5px solid white;
+        height: 900px;
+        width: auto;
+      }
+      .thumbnail {
+        cursor: pointer;
+        height: 200px;
+        width: auto;
+        opacity: 0.5;
+        margin-right: 10px;
+        margin-left: 10px;
+      }
+      .thumbnail:hover {
+        opacity: 1;
+      }
+      .active {
+        opacity: 1;
+      }
+      #slide-wrapper {
+        margin-left: 100px;
+        display: flex;
+        max-width: 300px;
+        min-height: 100px;
+        align-items: center;
+      }
+      #slider {
+        width: 180px;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: hidden;
+      }
+      .arrow {
+        width: 30px;
+        height: auto;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      #content-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .column {
+        width: 650px;
+        padding: 10px;
+      }
+      .info {
+        display: table; /* keep the background color wrapped tight */
+        margin-left: 100px; /* keep the table centered */
+        padding: 5px;
+        background-color: white;
+        color: black;
+      }
+      .desc {
+        margin-left: 100px;
+        color: white;
+      }
+      h1 {
+        margin-top: -280px;
+        display: table; /* keep the background color wrapped tight */
+        margin-left: 100px; /* keep the table centered */
+        padding: 5px;
+        background-color: white;
+        color: black;
+        font-size: 40px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="content-wrapper">
+      <div class="column">
+        <img
+          id="featured"
+          src="https://static.myfigurecollection.net/upload/items/large/846005.jpg"
+          alt="lio"
+        />
+      </div>
+
+      <div class="column">
+        <h1>Lio Fotia 1/7 Scale</h1>
+        <p class="info">Manufacturer: Kotobukiya</p>
+        <p class="info">Retail Price: 11800 Yen</p>
+        <p class="info">Release Date: 2020</p>
+
+        <p class="desc">
+          My very first scale figure and still one of my favourites to this
+          date. He has a great pose and the colourful and unique base elevates
+          the figure to the next level. My only gripe with it is that his hair
+          has a noticeable seamline, but I do understand that it needs to there
+          so that you can switch out faceplates. Though I think it could be more
+          well hidden.
+        </p>
+        <div id="slide-wrapper">
+          <img id="slideLeft" class="arrow" src="arrow.png" alt="" />
+
+          <div id="slider">
+            <img
+              class="thumbnail"
+              src="https://static.myfigurecollection.net/upload/items/large/846005.jpg"
+              alt=""
+            />
+            <img
+              class="thumbnail"
+              src="https://static.myfigurecollection.net/upload/pictures/2019/09/30/2306447.jpeg"
+              alt=""
+            />
+            <img
+              class="thumbnail active"
+              src="https://static.myfigurecollection.net/upload/pictures/2020/04/11/2421727.jpeg"
+              alt=""
+            />
+          </div>
+
+          <img id="slideRight" class="arrow" src="arrow_right.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <script src="Slider.js"></script>
+  </body>
+</html>

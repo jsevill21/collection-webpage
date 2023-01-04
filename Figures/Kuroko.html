@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kuroko</title>
+    <style>
+      body {
+        color: white;
+        font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+        font-size: 20px;
+        background-color: black;
+      }
+      img {
+        border: 5px solid white;
+        height: 700px;
+        width: auto;
+      }
+      .thumbnail {
+        cursor: pointer;
+        height: 200px;
+        width: auto;
+        opacity: 0.5;
+        margin-right: 10px;
+        margin-left: 10px;
+      }
+      .thumbnail:hover {
+        opacity: 1;
+      }
+      .active {
+        opacity: 1;
+      }
+      #slide-wrapper {
+        margin-left: 100px;
+        display: flex;
+        max-width: 300px;
+        min-height: 100px;
+        align-items: center;
+      }
+      #slider {
+        width: 180px;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: hidden;
+      }
+      .arrow {
+        width: 30px;
+        height: auto;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      #content-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .column {
+        width: 650px;
+        padding: 10px;
+      }
+      .info {
+        display: table; /* keep the background color wrapped tight */
+        margin-left: 100px; /* keep the table centered */
+        padding: 5px;
+        background-color: white;
+        color: black;
+      }
+      .desc {
+        margin-left: 100px;
+        color: white;
+      }
+      h1 {
+        margin-top: -90px;
+        display: table; /* keep the background color wrapped tight */
+        margin-left: 100px; /* keep the table centered */
+        padding: 5px;
+        background-color: white;
+        color: black;
+        font-size: 40px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="content-wrapper">
+      <div class="column">
+        <img
+          id="featured"
+          src="https://static.myfigurecollection.net/upload/items/large/166704.jpg"
+          alt="Kuroko"
+        />
+      </div>
+
+      <div class="column">
+        <h1>Kuroko Tetsuya 1/8 Scale</h1>
+        <p class="info">Manufacturer: MegaHouse</p>
+        <p class="info">Retail Price: 7600 Yen</p>
+        <p class="info">Release Date: 2014</p>
+
+        <p class="desc">
+          I found him brand new on Mandarake for a good price so I got him to
+          put into sports anime characters shelf :D. Great quality from
+          MegaHouse despite it's age. He also doesn't have a support pole unlike
+          a lot of the other Kuroko' Basketball figures, which was more pleasing
+          to the eye for me. When I opened him I noticed that he felt sticky due
+          to being in a box for a while, but eventually with time and tissues,
+          he doesn't feel this way anymore.
+        </p>
+        <div id="slide-wrapper">
+          <img id="slideLeft" class="arrow" src="arrow.png" alt="" />
+
+          <div id="slider">
+            <img
+              class="thumbnail"
+              src="https://static.myfigurecollection.net/upload/items/large/166704.jpg"
+              alt=""
+            />
+            <img
+              class="thumbnail"
+              src="https://static.myfigurecollection.net/upload/pictures/2014/01/24/907954.jpeg"
+              alt=""
+            />
+          </div>
+
+          <img id="slideRight" class="arrow" src="arrow_right.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <script src="Slider.js"></script>
+  </body>
+</html>
